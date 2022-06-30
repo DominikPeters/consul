@@ -1,4 +1,5 @@
 class Dashboard::Mailer < ApplicationMailer
+  helper :mailer
   layout "mailer"
   after_action :check_deliverability, except: [:forward]
 
